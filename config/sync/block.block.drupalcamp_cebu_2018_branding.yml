@@ -1,0 +1,25 @@
+uuid: a47eeef7-3ae2-4eb9-a5cf-0379edd9b74f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalcamp_cebu_2018
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: drupalcamp_cebu_2018_branding
+theme: drupalcamp_cebu_2018
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

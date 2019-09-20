@@ -1,0 +1,22 @@
+uuid: 4cb4320a-6762-4228-b783-45d4abb07d3e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalcamp_cebu_2018
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: drupalcamp_cebu_2018_messages
+theme: drupalcamp_cebu_2018
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

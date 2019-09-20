@@ -1,0 +1,20 @@
+uuid: 53cfaed0-55c3-48a0-af0d-eb8bdad2a4be
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupalcamp_cebu_2018
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: drupalcamp_cebu_2018_page_title
+theme: drupalcamp_cebu_2018
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

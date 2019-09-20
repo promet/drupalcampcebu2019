@@ -1,0 +1,22 @@
+uuid: fd3fad2a-b2e6-49b3-bbf3-7b84b15569e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupalcamp_cebu_2018
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: drupalcamp_cebu_2018_help
+theme: drupalcamp_cebu_2018
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
