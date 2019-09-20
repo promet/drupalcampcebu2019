@@ -10,7 +10,7 @@ If it doesn't exists, create a folder docker in your home directory. This is whe
 Clone Expresso PHP in ~/docker
 ```
 $ cd ~/docker
-$ git clone https://github.com/expresso-php/expresso-php.git drupalcampcebu2018
+$ git clone https://github.com/expresso-php/expresso-php.git drupalcampcebu2019
 ```
 ### Set Expresso PHP to match PROD: Nginx with PHP 7.2
 To set this site to PHP 7.0, change the first line of the file "docker/php/Dockerfile".
@@ -26,14 +26,14 @@ Create the symlink from Expresso PHP to drupalcampcebu2019:
 ```
 $ ln -s drupalcampcebu2019/web web
 ```
-### Copy `.env.example` to `.env` and edit appropriately as needed.
+### Copy .env.example to .env and edit appropriately as needed.
 ### Get copy of database from remote server
 `ssh YOURUSERNAME 2019.drupalcebu.org`
 `cd /var/www/sites/2019.drupalcebu.org/www`
 `sudo su promet`
 `drush sql-dump > ../backups/[ENV][YYYYMMDD]-[description].sql`
 ### Download DB file to local
-`scp YOURUSERNAME@2019.drupalcebu.org:/var/www/sites/2018.drupalcebu.org/backups/[ENV][YYYYMMDD]-[description].sql ~/Desktop`
+`scp YOURUSERNAME@2019.drupalcebu.org:/var/www/sites/2019.drupalcebu.org/backups/[ENV][YYYYMMDD]-[description].sql ~/Desktop`
 ### Dump old DB and place DB in root
 `docker-compose run --rm php_nginx drush sql-drop`
 `docker-compose run --rm php_nginx drush sqlc < ~/Desktop/[ENV][YYYYMMDD]-[description].sql`
@@ -54,6 +54,14 @@ composer install
     ```sh
     composer install --prefer-source
     ```
+### Installing the website
+```sh
+docker-compose exec php_nginx ../build/install.sh
+```
+### Updating the website
+```sh
+docker-compose exec php_nginx ../build/update.sh
+```
 # Start docker compose and check PHP
 - The first time the `db` container is initialized, it will
   automatically import the DB dump file from the root. This import may
@@ -83,16 +91,4 @@ docker-compose run --rm php_nginx drush updb
 docker-compose run --rm php_nginx drush cr
 docker-compose run --rm php_nginx drush uli
 ```
-### CSS Editing
-Right now, all the CSS from `themes/custom/drupalcamp_cebu_2018/css` is directly ***Symlinked*** into `static/css/`. When you modify the CSS, do it in the ***Sass*** folder found in `static/sass`.
-When first compiling ***Sass***, run `npm install` and `gulp` within the `static` folder. You may need to execute `gulp` from within `static` folder when you want to Sassify the CSS, or better yet, execute `gulp watch`.
-## Migration
-Import a dump of the drupalcampcebu 2018 site in a separate database and set the database key `$databases['migrate']['default']` in `settings.local.php`. Process the available migrations by invoking `drush mi --all`.
-### Installing the website
-```sh
-docker-compose exec php_nginx ../build/install.sh
-```
-### Updating the website
-```sh
-docker-compose exec php_nginx ../build/update.sh
-```
+
