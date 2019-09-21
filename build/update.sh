@@ -5,10 +5,10 @@ path=$(dirname "$0")
 true=`which true`
 source $path/common.sh
 
-if [ -f config/sync/system.site.yml ]; then
+if [ -f ../config/sync/system.site.yml ]; then
   echo "...Importing configuration."
   echo "...Getting UUID from config."
-  uuid=$(awk '{for (I=1;I<=NF;I++) if ($I == "uuid:") {print $(I+1)};}' config/sync/system.site.yml)
+  uuid=$(awk '{for (I=1;I<=NF;I++) if ($I == "uuid:") {print $(I+1)};}' ../config/sync/system.site.yml)
   echo "...Setting system UUID to " ${uuid}
   $drush cset system.site uuid ${uuid} -y
 fi
@@ -32,9 +32,7 @@ echo "...Build Complete!"
 
 echo "...Updating files directory permission."
 dir=$(pwd -P)
-if [ ${dir} = "/var/www/sites/www.lenovo.com" ]; then
-  sudo chown -R promet.apache html/sites/default/files
-fi
-sudo chmod -R 775 html/sites/default/files
+sudo chown -R promet.apache sites/default/files
+sudo chmod -R 775 sites/default/files
 
 echo "...Files permission update done."
