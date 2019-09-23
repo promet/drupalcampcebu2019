@@ -19,6 +19,9 @@ composer install
 echo "...Clearing caches."
 $drush cr -y
 
+## Needed to avoid 'drush config:import' failure.
+$drush ev '\Drupal::entityManager()->getStorage("shortcut_set")->load("default")->delete();'
+
 echo "...Importing the config, so everything is in place."
 $drush config:import --source=../config/sync
 
