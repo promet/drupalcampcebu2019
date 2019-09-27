@@ -1,0 +1,48 @@
+uuid: d297fb6d-5470-4d8b-8c59-8af33c5919a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.speakers.field_image_speaker
+    - field.field.node.speakers.field_position_speaker
+    - field.field.node.speakers.field_speaker
+    - node.type.speakers
+  module:
+    - image
+    - user
+id: node.speakers.default
+targetEntityType: node
+bundle: speakers
+mode: default
+content:
+  field_image_speaker:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_position_speaker:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_speaker:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

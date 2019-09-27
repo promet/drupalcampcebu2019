@@ -1,6 +1,6 @@
-uuid: fc183043-7a25-4f82-a5ba-b45e76e88d46
+uuid: 2c79fb40-2970-41ba-a576-5f0f9490eb4f
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - drupalcamp_cebu_2018
@@ -9,7 +9,7 @@ _core:
 id: drupalcamp_cebu_2018_local_actions
 theme: drupalcamp_cebu_2018
 region: content
-weight: -20
+weight: -1
 provider: null
 plugin: local_actions_block
 settings:

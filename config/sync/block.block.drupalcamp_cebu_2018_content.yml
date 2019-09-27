@@ -1,4 +1,4 @@
-uuid: 8aa6eea4-9d5f-4785-ac5a-471422b0c2bf
+uuid: 86b02184-6562-483c-b93f-3f80bd68895a
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: drupalcamp_cebu_2018_content
 theme: drupalcamp_cebu_2018
 region: content
-weight: 0
+weight: -5
 provider: null
 plugin: system_main_block
 settings:

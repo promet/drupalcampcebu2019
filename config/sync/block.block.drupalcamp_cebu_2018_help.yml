@@ -1,6 +1,6 @@
-uuid: fd3fad2a-b2e6-49b3-bbf3-7b84b15569e3
+uuid: 44c09c90-d2ca-4ac2-befb-33620daac321
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - help
@@ -11,7 +11,7 @@ _core:
 id: drupalcamp_cebu_2018_help
 theme: drupalcamp_cebu_2018
 region: content
-weight: -30
+weight: -2
 provider: null
 plugin: help_block
 settings:

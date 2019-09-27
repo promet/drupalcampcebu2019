@@ -1,0 +1,19 @@
+uuid: c7ee9d44-4b02-4c0f-81b4-dbbfd20556a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position_speaker
+    - node.type.speakers
+id: node.speakers.field_position_speaker
+field_name: field_position_speaker
+entity_type: node
+bundle: speakers
+label: Position
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

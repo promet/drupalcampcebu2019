@@ -1,0 +1,31 @@
+uuid: ce48e250-4fc3-4ff0-98dc-ddf4deae7849
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:511d3722-6c48-4575-89b9-03f8b386fe22'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupalcamp_cebu_2018
+id: bottomfooter
+theme: drupalcamp_cebu_2018
+region: bottom_footer
+weight: 0
+provider: null
+plugin: 'block_content:511d3722-6c48-4575-89b9-03f8b386fe22'
+settings:
+  id: 'block_content:511d3722-6c48-4575-89b9-03f8b386fe22'
+  label: 'Bottom Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

@@ -8,5 +8,7 @@ base theme: classy
 regions:
  header: Header
  content: Content
- sidebar_first: 'Sidebar first'
- footer: Footer
+ top_footer: Top Footer
+ middle_left_footer: Middle Left Footer
+ middle_right_footer: Middle Right Footer
+ bottom_footer: Bottom Footer

@@ -1,0 +1,31 @@
+uuid: 8b52b2e6-392b-4f68-9fd8-6fb9cc7564fb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:846d5843-3d05-43d1-81d7-cc7087f8cf58'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupalcamp_cebu_2018
+id: drupaltweets
+theme: drupalcamp_cebu_2018
+region: middle_left_footer
+weight: -8
+provider: null
+plugin: 'block_content:846d5843-3d05-43d1-81d7-cc7087f8cf58'
+settings:
+  id: 'block_content:846d5843-3d05-43d1-81d7-cc7087f8cf58'
+  label: 'Drupal Tweets'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

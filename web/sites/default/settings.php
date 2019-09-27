@@ -280,7 +280,7 @@ $config_directories = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = '-vZdXGsxy7Auap1srXIFyq7klSjV3e8r9lV046Be_qYG8pUzwF-LqGcT67yKMgFao5daPKd8BA';
 
 /**
  * Deployment identifier.
@@ -773,6 +773,6 @@ $settings['entity_update_backup'] = TRUE;
  *
  * Keep this code block at the end of this file to take full effect.
  */
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-  include $app_root . '/' . $site_path . '/settings.local.php';
+if (file_exists(__DIR__ . '/settings.local.php')) {
+  include _DIR_ . '/settings.local.php';
 }
