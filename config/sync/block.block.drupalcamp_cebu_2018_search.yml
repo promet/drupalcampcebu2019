@@ -1,6 +1,6 @@
-uuid: fe2a4e23-696b-4c05-9ea4-e070dc0c0e2e
+uuid: 7cebaaff-cbd2-4524-893a-e9d2573a95f5
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - search
@@ -10,7 +10,7 @@ _core:
   default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
 id: drupalcamp_cebu_2018_search
 theme: drupalcamp_cebu_2018
-region: sidebar_first
+region: header
 weight: -1
 provider: null
 plugin: search_form_block
