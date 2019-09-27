@@ -12,8 +12,9 @@ This is the source code for the official website of Drupalcamp Cebu 2019 based o
 ## Development lifecycle commands
 1. This project utilizes a Makefile for the main development lifecycle. Run `make help` to check the available commands or check the Makefile itself.
 2. After the initial setup, use `make up` to start and `make stop` to stop your project environment.
+3. Use `make site-update` to run the normal build process commands i.e. run `composer install`, run a configuration import, run update hook(s) and etc.
 
 ## Run Drush commands
 ```
-docker-compose run -rm drush -l <command>
+docker-compose run -rm drush <command>
 ```

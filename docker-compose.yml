@@ -20,8 +20,6 @@ services:
   drush:
     container_name: dcc_drush
     image: llt104/drush:9-composer1.8-php7.3
-    # image: local-drush:9-alpine
-    # image: drush/drush:9
     volumes:
       - ./:/app:cached
     command:

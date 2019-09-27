@@ -40,6 +40,10 @@ initialize: composer-install ## Initialize local environment.
 		echo "> Copying settings.local.php into ./docroot/sites/default/."; \
 		cp ./build/settings.local.php ./web/sites/default/settings.local.php; \
 	fi
+	@if [ ! -f ".env" ]; then \
+		echo "> Copying env into .env."; \
+		cp ./build/env .env; \
+	fi
 	@echo "> Starting containers."
 	@docker-compose up -d --build
 	@echo "Waiting for database connection to be established."
@@ -68,7 +72,7 @@ db-import: db-drop ## Import the database.
 	@if command -v pv >/dev/null; then \
 		pv ./build/ref_db/dcc.sql.gz | zcat | $(DRUSH) sqlc; \
 	else \
-		zcat ./build/ref_db/dcc.sql.gz | $(DRUSH) sqlc; \
+		gunzip -c ./build/ref_db/dcc.sql.gz | $(DRUSH) sqlc; \
 	fi
 
 db-drop: ## Drop the database.
@@ -79,4 +83,11 @@ db-drop: ## Drop the database.
 
 composer-install: ## Runs `composer install`
 	@echo "> Running \"composer install\"."
-	@$(COMPOSER) install;
+	@$(COMPOSER) install
+
+site-update: ## Runs the normal Drupal site build commands.
+	@$(COMPOSER) install
+	@$(DRUSH) cr
+	@$(DRUSH) cim -y
+	@$(DRUSH) updb -y
+	@$(DRUSH) cr
