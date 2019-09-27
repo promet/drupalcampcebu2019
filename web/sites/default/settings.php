@@ -280,7 +280,7 @@ $config_directories = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '-vZdXGsxy7Auap1srXIFyq7klSjV3e8r9lV046Be_qYG8pUzwF-LqGcT67yKMgFao5daPKd8BA';
+$settings['hash_salt'] = '';
 
 /**
  * Deployment identifier.
@@ -763,23 +763,6 @@ $settings['entity_update_batch_size'] = 50;
  */
 $settings['entity_update_backup'] = TRUE;
 
-$settings['install_profile'] = 'standard';
-$config_directories['sync'] = getenv('SYNC_DIRECTORY');
-
-global $content_directories;
-$content_directories['sync'] = getenv('CONTENT_SYNC_DIRECTORY');
-
-$databases['default']['default'] = [
-  'database' => getenv('MYSQL_DATABASE'),
-  'driver' => 'mysql',
-  'host' => getenv('MYSQL_HOSTNAME'),
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'password' => getenv('MYSQL_PASSWORD'),
-  'port' => getenv('MYSQL_PORT'),
-  'prefix' => '',
-  'username' => getenv('MYSQL_USER'),
-];
-
 /**
  * Load local development override configuration, if available.
  *
@@ -790,6 +773,7 @@ $databases['default']['default'] = [
  *
  * Keep this code block at the end of this file to take full effect.
  */
-if (file_exists(__DIR__ . '/settings.local.php')) {
-  include _DIR_ . '/settings.local.php';
+
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
 }
