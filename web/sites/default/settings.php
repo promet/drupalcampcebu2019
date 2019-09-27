@@ -280,7 +280,7 @@ $config_directories = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '-vZdXGsxy7Auap1srXIFyq7klSjV3e8r9lV046Be_qYG8pUzwF-LqGcT67yKMgFao5daPKd8BA';
+$settings['hash_salt'] = '';
 
 /**
  * Deployment identifier.
@@ -793,13 +793,4 @@ $databases['default']['default'] = [
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
-$databases['default']['default'] = array (
-  'database' => 'expresso-php',
-  'username' => 'expresso-php',
-  'password' => 'expresso-php',
-  'prefix' => '',
-  'host' => 'db',
-  'port' => '',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
 );
