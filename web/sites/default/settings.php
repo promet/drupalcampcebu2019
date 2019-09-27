@@ -763,23 +763,6 @@ $settings['entity_update_batch_size'] = 50;
  */
 $settings['entity_update_backup'] = TRUE;
 
-$settings['install_profile'] = 'standard';
-$config_directories['sync'] = getenv('SYNC_DIRECTORY');
-
-global $content_directories;
-$content_directories['sync'] = getenv('CONTENT_SYNC_DIRECTORY');
-
-$databases['default']['default'] = [
-  'database' => getenv('MYSQL_DATABASE'),
-  'driver' => 'mysql',
-  'host' => getenv('MYSQL_HOSTNAME'),
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'password' => getenv('MYSQL_PASSWORD'),
-  'port' => getenv('MYSQL_PORT'),
-  'prefix' => '',
-  'username' => getenv('MYSQL_USER'),
-];
-
 /**
  * Load local development override configuration, if available.
  *

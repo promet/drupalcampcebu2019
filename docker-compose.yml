@@ -1,0 +1,31 @@
+version: '3'
+services:
+  web:
+    container_name: dcc_web
+    build: docker/web
+    volumes:
+      - ./:/var/www:cached
+    ports:
+      - 80:80
+  db:
+    container_name: dcc_db
+    image: mysql:5.7
+    ports:
+      - 3306:3306
+    volumes:
+      - dbdata:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: default
+  drush:
+    container_name: dcc_drush
+    image: llt104/drush:9-composer1.8-php7.3
+    # image: local-drush:9-alpine
+    # image: drush/drush:9
+    volumes:
+      - ./:/app:cached
+    command:
+      - "drush"
+      - "-r /app/web"
+volumes:
+  dbdata:
