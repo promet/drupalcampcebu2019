@@ -11,7 +11,7 @@ id: node.speakers.field_image_speaker
 field_name: field_image_speaker
 entity_type: node
 bundle: speakers
-label: 'Image for Speaker'
+label: 'Image Profile'
 description: ''
 required: true
 translatable: false
