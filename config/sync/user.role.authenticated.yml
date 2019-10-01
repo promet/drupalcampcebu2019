@@ -13,6 +13,8 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'create speakers content'
+  - 'create sponsor content'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'

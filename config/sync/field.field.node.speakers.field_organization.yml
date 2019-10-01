@@ -1,17 +1,17 @@
-uuid: 712dfcaf-abdc-4857-8536-8cbd338ee640
+uuid: 45f3a155-e527-4512-9250-b3c8743c02a6
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_speaker
+    - field.storage.node.field_organization
     - node.type.speakers
-id: node.speakers.field_speaker
-field_name: field_speaker
+id: node.speakers.field_organization
+field_name: field_organization
 entity_type: node
 bundle: speakers
-label: 'Full Name'
+label: Organization
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

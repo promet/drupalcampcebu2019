@@ -3,35 +3,56 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.speakers.field_email
     - field.field.node.speakers.field_image_speaker
+    - field.field.node.speakers.field_location
+    - field.field.node.speakers.field_organization
     - field.field.node.speakers.field_position_speaker
     - field.field.node.speakers.field_speaker
+    - field.field.node.speakers.field_topic_description
     - image.style.thumbnail
     - node.type.speakers
   module:
     - image
-    - path
 id: node.speakers.default
 targetEntityType: node
 bundle: speakers
 mode: default
 content:
-  created:
-    type: datetime_timestamp
-    weight: 2
-    region: content
-    settings: {  }
+  field_email:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
+    type: email_default
+    region: content
   field_image_speaker:
-    weight: 7
+    weight: 4
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
     region: content
+  field_location:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_organization:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_position_speaker:
-    weight: 9
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -39,40 +60,21 @@ content:
     type: string_textfield
     region: content
   field_speaker:
-    weight: 8
+    weight: 2
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
-  path:
-    type: path
-    weight: 5
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
+  field_topic_description:
+    weight: 1
     settings:
-      display_label: true
-    weight: 3
-    region: content
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 6
+    type: string_textarea
     region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 4
-    region: content
-    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -81,13 +83,10 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 1
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    region: content
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

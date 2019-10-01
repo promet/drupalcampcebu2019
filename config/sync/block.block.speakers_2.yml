@@ -1,0 +1,31 @@
+uuid: 207a2323-9bd2-4c81-a074-de4d29d896ab
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4268c52d-dbb2-430b-9f25-5f896c889b1a'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: speakers_2
+theme: bartik
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:4268c52d-dbb2-430b-9f25-5f896c889b1a'
+settings:
+  id: 'block_content:4268c52d-dbb2-430b-9f25-5f896c889b1a'
+  label: Speakers
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

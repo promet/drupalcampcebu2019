@@ -1,0 +1,25 @@
+uuid: c6e6a72e-2dc9-4675-8969-f0aca509d65c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:511d3722-6c48-4575-89b9-03f8b386fe22'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: bottomfooter_2
+theme: bartik
+region: footer_fifth
+weight: -7
+provider: null
+plugin: 'block_content:511d3722-6c48-4575-89b9-03f8b386fe22'
+settings:
+  id: 'block_content:511d3722-6c48-4575-89b9-03f8b386fe22'
+  label: 'Bottom Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

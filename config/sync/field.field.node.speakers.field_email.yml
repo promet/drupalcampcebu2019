@@ -1,19 +1,19 @@
-uuid: 712dfcaf-abdc-4857-8536-8cbd338ee640
+uuid: 77888980-82da-4129-8e3d-97523fa0beb9
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_speaker
+    - field.storage.node.field_email
     - node.type.speakers
-id: node.speakers.field_speaker
-field_name: field_speaker
+id: node.speakers.field_email
+field_name: field_email
 entity_type: node
 bundle: speakers
-label: 'Full Name'
+label: Email
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: email
