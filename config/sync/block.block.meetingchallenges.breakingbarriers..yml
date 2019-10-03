@@ -12,7 +12,7 @@ dependencies:
 id: meetingchallenges.breakingbarriers.
 theme: bartik
 region: content
-weight: -9
+weight: -6
 provider: null
 plugin: 'block_content:d71e41bb-baff-49b0-bd58-5b022c39809d'
 settings:

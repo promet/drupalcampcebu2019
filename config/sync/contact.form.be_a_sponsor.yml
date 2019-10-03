@@ -1,0 +1,12 @@
+uuid: a6f58c45-087b-401f-9809-7fd78282969a
+langcode: en
+status: true
+dependencies: {  }
+id: be_a_sponsor
+label: 'Be a sponsor'
+recipients:
+  - adrian@prometsource.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''
