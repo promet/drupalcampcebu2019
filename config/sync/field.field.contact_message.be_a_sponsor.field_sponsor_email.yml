@@ -1,0 +1,19 @@
+uuid: c09dc813-bdcc-4ce4-b4f0-2a4adbe7af2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.be_a_sponsor
+    - field.storage.contact_message.field_sponsor_email
+id: contact_message.be_a_sponsor.field_sponsor_email
+field_name: field_sponsor_email
+entity_type: contact_message
+bundle: be_a_sponsor
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

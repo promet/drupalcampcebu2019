@@ -1,0 +1,118 @@
+uuid: 63458c9d-fa10-413b-b1ad-ec5d29157015
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.be_a_sponsor
+    - field.field.contact_message.be_a_sponsor.field_about_your_company
+    - field.field.contact_message.be_a_sponsor.field_contact_name
+    - field.field.contact_message.be_a_sponsor.field_mobile_no_
+    - field.field.contact_message.be_a_sponsor.field_questions_and_concerns
+    - field.field.contact_message.be_a_sponsor.field_sponsor_address
+    - field.field.contact_message.be_a_sponsor.field_sponsor_email
+    - field.field.contact_message.be_a_sponsor.field_sponsor_level
+    - field.field.contact_message.be_a_sponsor.field_sponsor_logo
+    - field.field.contact_message.be_a_sponsor.field_sponsor_name
+    - field.field.contact_message.be_a_sponsor.field_terms_conditions
+    - field.field.contact_message.be_a_sponsor.field_website
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+id: contact_message.be_a_sponsor.default
+targetEntityType: contact_message
+bundle: be_a_sponsor
+mode: default
+content:
+  field_about_your_company:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_contact_name:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mobile_no_:
+    weight: 5
+    settings:
+      size: 15
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_questions_and_concerns:
+    weight: 9
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_sponsor_address:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_sponsor_email:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_sponsor_level:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_sponsor_logo:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_sponsor_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_terms_conditions:
+    weight: 10
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_website:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  copy: true
+  mail: true
+  message: true
+  name: true
+  preview: true
+  subject: true

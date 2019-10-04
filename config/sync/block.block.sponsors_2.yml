@@ -12,7 +12,7 @@ dependencies:
 id: sponsors_2
 theme: bartik
 region: content
-weight: -5
+weight: -2
 provider: null
 plugin: 'block_content:0416f607-55ec-4589-8615-6b04e7e38e18'
 settings:
