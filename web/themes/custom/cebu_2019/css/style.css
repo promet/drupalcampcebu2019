@@ -1,0 +1,91 @@
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Open Sans, sans-serif;
+}
+body.navbar-is-fixed-top {
+  margin-top: 51px;
+}
+
+.navbar-default {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+}
+
+.banner img{
+  width: 100%;
+  height: auto;
+}
+
+.navbar-default .navbar-brand {
+  font-family: Open Sans, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #39aade;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-brand .text-logo-second {
+  color: #cd853f;
+}
+
+/**
+ * Custom contents.
+ */
+/* Landing page. */
+.banner {
+  background: url('../images/drupal_2019_banner.jpg') center center scroll;
+  min-height: 400px;
+}
+.banner .page-heading {
+  padding: 56px 0;
+  background: rgb(255,255,255,0.8);
+  min-height: 400px;
+  color: #000;
+  text-align: center;
+}
+.banner .page-heading img {
+  max-width: 137px;
+}
+.banner .page-heading h2 {
+  margin: 0;
+  color: #003656;
+  font-size: 43px;
+}
+.banner .page-heading h2.year {
+  font-size: 153px;
+  color: #38B2E4;
+}
+.banner .page-heading hr {
+  width: 160px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  border-color: #000;
+}
+.banner .page-heading blockquote {
+  color: #000;
+  border: none;
+}
+
+.path-frontpage .main-container .region-content .intro-container {
+  position: relative;
+  height: 400px;
+}
+.path-frontpage .main-container .region-content .intro-container .container {
+  z-index: 20;
+}
+.path-frontpage .main-container .region-content .intro-container .intro-background {
+  margin-top: -100%;
+  position: relative;
+  top: 0;
+  z-index: 1;
+  background: #23374d;
+}
+.path-frontpage .main-container .region-content .sub-title-container {
+  /*background: url('../images/moal-boal.jpeg') center center no-repeat;*/
+}
