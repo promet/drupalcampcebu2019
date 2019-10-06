@@ -1,0 +1,19 @@
+uuid: 5e0c5d2b-6bdd-4b4e-8eec-7d0d55696df2
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+id: contact_message.field_about_your_company
+field_name: field_about_your_company
+entity_type: contact_message
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

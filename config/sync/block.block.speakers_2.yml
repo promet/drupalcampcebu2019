@@ -12,7 +12,7 @@ dependencies:
 id: speakers_2
 theme: bartik
 region: content
-weight: -7
+weight: -4
 provider: null
 plugin: 'block_content:4268c52d-dbb2-430b-9f25-5f896c889b1a'
 settings:

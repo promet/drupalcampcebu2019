@@ -1,0 +1,19 @@
+uuid: 302d8507-37e3-4cad-8888-187159478e04
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - link
+id: contact_message.field_website
+field_name: field_website
+entity_type: contact_message
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
