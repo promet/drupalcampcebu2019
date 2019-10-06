@@ -7,6 +7,12 @@ fonts:
     theme:
       '//fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans': { type: external, minified: true }
 
+fontawesome:
+  css:
+    theme:
+      font-awesome/css/fontawesome.min.css: {}
+      font-awesome/css/solid.min.css: {}
+
 # Uncomment for LESS source JavaScript files.
 #  js:
 #    bootstrap/js/affix.js: {}
