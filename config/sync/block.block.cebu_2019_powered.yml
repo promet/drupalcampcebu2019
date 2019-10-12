@@ -1,0 +1,22 @@
+uuid: 212a048e-cbc3-4f88-a1b0-f5591e7aefaa
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - cebu_2019
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: cebu_2019_powered
+theme: cebu_2019
+region: header
+weight: -5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

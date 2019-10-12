@@ -1,0 +1,20 @@
+uuid: 9e6eeeda-a874-4c30-8036-004033ea2a8a
+langcode: en
+status: false
+dependencies:
+  theme:
+    - cebu_2019
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: cebu_2019_local_actions
+theme: cebu_2019
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

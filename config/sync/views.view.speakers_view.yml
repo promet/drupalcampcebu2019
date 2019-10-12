@@ -6,7 +6,6 @@ dependencies:
     - field.storage.node.field_image_speaker
     - field.storage.node.field_position_speaker
     - field.storage.node.field_speaker
-    - image.style.image_profile
     - node.type.speakers
   module:
     - image
@@ -129,7 +128,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: image_profile
+            image_style: ''
             image_link: ''
           group_column: ''
           group_columns: {  }

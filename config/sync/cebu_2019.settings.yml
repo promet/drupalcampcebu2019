@@ -1,0 +1,26 @@
+schemas:
+  bootstrap: 8000
+  cebu_2019: 8000
+favicon:
+  mimetype: image/svg+xml
+  path: 'public://logo.svg'
+  url: 'http://localhost/themes/custom/cebu_2019/favicon.ico'
+  use_default: false
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: 'public://logo_2.png'
+  url: ''
+  use_default: false
+table_responsive: '-1'
+navbar_position: fixed-top
+cdn_theme: bootstrap
+cdn_cache_ttl_versions: '604800'
+cdn_cache_ttl_themes: '604800'
+cdn_cache_ttl_assets: '0'
+cdn_cache_ttl_library: '0'
+reset_http_request_cache: ''
+table: ''

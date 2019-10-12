@@ -3,14 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.speakers.field_email
     - field.field.node.speakers.field_image_speaker
-    - field.field.node.speakers.field_location
-    - field.field.node.speakers.field_organization
     - field.field.node.speakers.field_position_speaker
     - field.field.node.speakers.field_speaker
-    - field.field.node.speakers.field_topic_description
-    - image.style.image_profile
     - node.type.speakers
   module:
     - image
@@ -20,40 +15,17 @@ targetEntityType: node
 bundle: speakers
 mode: default
 content:
-  field_email:
-    weight: 4
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
   field_image_speaker:
-    weight: 3
+    weight: 1
     label: above
     settings:
-      image_style: image_profile
+      image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
     region: content
-  field_location:
-    weight: 6
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_organization:
-    weight: 5
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_position_speaker:
-    weight: 2
+    weight: 3
     label: above
     settings:
       link_to_entity: false
@@ -61,19 +33,16 @@ content:
     type: string
     region: content
   field_speaker:
-    weight: 1
+    weight: 2
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  field_topic_description:
+  links:
     weight: 0
-    label: above
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
-    region: content
-hidden:
-  links: true
+hidden: {  }

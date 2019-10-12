@@ -1,0 +1,22 @@
+uuid: 5514603a-3aa1-4159-a2ad-774b8f6efbaa
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cebu_2019
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: cebu_2019_content
+theme: cebu_2019
+region: content
+weight: -9
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
