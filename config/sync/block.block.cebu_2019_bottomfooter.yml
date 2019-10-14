@@ -1,0 +1,31 @@
+uuid: 9e7927ba-70d1-4f31-b946-9658ed109050
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:511d3722-6c48-4575-89b9-03f8b386fe22'
+  module:
+    - block_content
+    - system
+  theme:
+    - cebu_2019
+id: cebu_2019_bottomfooter
+theme: cebu_2019
+region: footer
+weight: -11
+provider: null
+plugin: 'block_content:511d3722-6c48-4575-89b9-03f8b386fe22'
+settings:
+  id: 'block_content:511d3722-6c48-4575-89b9-03f8b386fe22'
+  label: 'Bottom Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

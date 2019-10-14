@@ -1,0 +1,31 @@
+uuid: d3cb5c92-275d-43cb-9443-27f1eb1ab615
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fce4b557-3eb3-41af-9908-4d0ccca05847'
+  module:
+    - block_content
+    - system
+  theme:
+    - cebu_2019
+id: cebu_2019_hostedbycituniversity
+theme: cebu_2019
+region: content
+weight: 1
+provider: null
+plugin: 'block_content:fce4b557-3eb3-41af-9908-4d0ccca05847'
+settings:
+  id: 'block_content:fce4b557-3eb3-41af-9908-4d0ccca05847'
+  label: 'Hosted by CIT University'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

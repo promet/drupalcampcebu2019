@@ -1,0 +1,22 @@
+uuid: 938be262-3630-4dd5-a0c6-c11024141f02
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - cebu_2019
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: cebu_2019_breadcrumbs
+theme: cebu_2019
+region: header
+weight: -10
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
