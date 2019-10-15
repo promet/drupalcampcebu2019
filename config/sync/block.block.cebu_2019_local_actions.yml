@@ -9,7 +9,7 @@ _core:
 id: cebu_2019_local_actions
 theme: cebu_2019
 region: content
-weight: -4
+weight: 0
 provider: null
 plugin: local_actions_block
 settings:

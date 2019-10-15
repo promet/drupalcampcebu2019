@@ -35,6 +35,19 @@ body.navbar-is-fixed-top {
 }
 
 /**
+ * General Styling.
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h2.block-title {
+  text-align: center;
+  font-size: 60px;
+  margin: 30px 0 60px;
+}
+
+/**
  * Custom contents.
  */
 /* Landing page. */
@@ -43,9 +56,9 @@ body.navbar-is-fixed-top {
   min-height: 400px;
 }
 .banner .page-heading {
-  padding: 56px 0;
+  padding: 130px 0;
   background: rgb(255,255,255,0.8);
-  min-height: 400px;
+  min-height: 635px;
   color: #000;
   text-align: center;
 }
@@ -74,12 +87,12 @@ body.navbar-is-fixed-top {
 
 .path-frontpage .main-container .region-content .intro-container {
   position: relative;
-  height: 400px;
+  height: 500px;
 }
 .path-frontpage .main-container .region-content .intro-container .container {
   z-index: 20;
   position: relative;
-  min-height: 400px
+  min-height: 500px
 }
 .path-frontpage .main-container .region-content .intro-container .container .bg-content {
   padding-left: 108px;
@@ -87,9 +100,11 @@ body.navbar-is-fixed-top {
 }
 .path-frontpage .main-container .region-content .intro-container .container .bg-content.bg-content-1 {
   padding-left: 0;
+  color: #000;
 }
 .path-frontpage .main-container .region-content .intro-container .container .bg-content.bg-content-2 {
   padding-right: 0;
+  padding-top: 96px;
 }
 .path-frontpage .main-container .region-content .intro-container .intro-background {
   z-index: 1;
@@ -108,16 +123,16 @@ body.navbar-is-fixed-top {
   font-size: 0;
 }
 .path-frontpage .main-container .region-content .intro-container .intro-background .bg.bg-1 {
-  background: #1871C2;
+  background: #7ddbdc;
 }
 .path-frontpage .main-container .region-content .intro-container .intro-background .bg.bg-1:after {
   content: '';
   display: block;
   position: absolute;
   z-index: 0;
-  -webkit-transform: skewX(-15deg);
-  transform: skewX(-15deg);
-  background: #1871C2;
+  -webkit-transform: skewX(-9deg);
+  transform: skewX(-9deg);
+  background: #7ddbdc;
   width: 108px;
   height: 100%;
   right: 0;
@@ -141,5 +156,79 @@ body.navbar-is-fixed-top {
   background: no-repeat fixed center center;
 }
 .path-frontpage .main-container .region-content .fixed-bg.bg-cebu-1 {
-  background-image: url(../images/cebu1.jpg);
+  background-image: url(../images/camp-2015.jpg);
+  height: 900px;
 }
+
+/**
+ * speakers_view views.
+ */
+.view-id-speakers_view {
+}
+.view-id-speakers_view .views-field-title {
+  height: auto;
+  width: auto;
+}
+.view-id-speakers_view .views-field-title h3.topic-title {
+  margin: 30px 0 10px;
+  min-height: 58px;
+}
+.view-id-speakers_view .views-field-field-speaker {
+  font-style: italic;
+  text-align: center;
+}
+.view-id-speakers_view .views-field-field-position-speaker {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/**
+ * Custom blocks.
+ */
+/* block-cebu-2019-meetingchallengesbreakingbarriers */
+#block-cebu-2019-meetingchallengesbreakingbarriers {
+  color: #000;
+  min-height: 500px;
+}
+/* block-cebu-2019-speakers */
+#block-cebu-2019-speakers {
+  background: #f5f0e3;
+}
+#block-cebu-2019-views-block-speakers-view-block-1 {
+  background: #f5f0e3;
+  padding-bottom: 80px;
+}
+#block-cebu-2019-drupalincebu {
+}
+#block-cebu-2019-drupalincebu .intro-container {
+  overflow: hidden;
+}
+#block-cebu-2019-drupalincebu .intro-container .container .bg-content.bg-content-1 {
+  color: #fff;
+}
+#block-cebu-2019-drupalincebu .intro-container .container .bg-content.bg-content-1 a {
+  color: inherit;
+  text-decoration: underline;
+}
+#block-cebu-2019-drupalincebu .intro-container .intro-background .bg.bg-1 {
+  background: #ff6f5e;
+}
+#block-cebu-2019-drupalincebu .intro-container .intro-background .bg.bg-1:after {
+  display: none;
+}
+#block-cebu-2019-drupalincebu .intro-container .intro-background .bg.bg-2 {
+  padding-left: 0;
+  padding-right: 0;
+}
+#block-cebu-2019-drupaltweets {
+  background: #1D9CEB;
+  padding: 130px 0;
+}
+#block-cebu-2019-drupaltweets .container {
+  color: #fff;
+}
+#block-cebu-2019-drupaltweets .container a {
+  color: inherit;
+  text-decoration: underline;
+}
+#block-cebu-2019-googlemap h2.block-title {}

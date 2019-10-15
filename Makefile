@@ -47,7 +47,7 @@ initialize: composer-install ## Initialize local environment.
 	@echo "> Starting containers."
 	@docker-compose up -d --build
 	@echo "Waiting for database connection to be established."
-	@while ! docker-compose exec db mysqladmin -hlocalhost ping --silent &> /dev/null ; do \
+	@while ! docker-compose exec -T db mysqladmin -hlocalhost -u${MYSQL_USER} -p${MYSQL_PASSWORD} ping --silent &> /dev/null ; do \
 		echo "> ..."; \
 		sleep 2; \
 	done

@@ -9,7 +9,7 @@ _core:
 id: cebu_2019_page_title
 theme: cebu_2019
 region: content
-weight: -7
+weight: -3
 provider: null
 plugin: page_title_block
 settings:

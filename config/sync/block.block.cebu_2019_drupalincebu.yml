@@ -12,7 +12,7 @@ dependencies:
 id: cebu_2019_drupalincebu
 theme: cebu_2019
 region: content
-weight: -3
+weight: -4
 provider: null
 plugin: 'block_content:68ce3d8b-1b7c-4ae5-a946-ae6c8c57866d'
 settings:
