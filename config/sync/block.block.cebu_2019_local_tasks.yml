@@ -9,7 +9,7 @@ _core:
 id: cebu_2019_local_tasks
 theme: cebu_2019
 region: content
-weight: -6
+weight: -2
 provider: null
 plugin: local_tasks_block
 settings:

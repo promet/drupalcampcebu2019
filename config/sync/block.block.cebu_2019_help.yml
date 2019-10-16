@@ -11,7 +11,7 @@ _core:
 id: cebu_2019_help
 theme: cebu_2019
 region: content
-weight: -5
+weight: -1
 provider: null
 plugin: help_block
 settings:

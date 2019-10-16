@@ -6,11 +6,12 @@ fonts:
   css:
     theme:
       '//fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans': { type: external, minified: true }
-
+      '//fonts.googleapis.com/css?family=Roboto+Slab': { type: external, minified: true }
 fontawesome:
   css:
     theme:
       font-awesome/css/fontawesome.min.css: {}
+      font-awesome/css/brands.min.css: {}
       font-awesome/css/solid.min.css: {}
 
 # Uncomment for LESS source JavaScript files.

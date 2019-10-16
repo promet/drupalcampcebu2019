@@ -12,14 +12,14 @@ dependencies:
 id: cebu_2019_views_block__speakers_view_block_1
 theme: cebu_2019
 region: content
-weight: -8
+weight: -5
 provider: null
 plugin: 'views_block:speakers_view-block_1'
 settings:
   id: 'views_block:speakers_view-block_1'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
   items_per_page: none
 visibility:

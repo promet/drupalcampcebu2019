@@ -1,0 +1,15 @@
+uuid: 6a86199f-9992-43b8-b1df-b92b47672f4a
+langcode: en
+status: true
+dependencies: {  }
+name: speakers_thumbnails
+label: 'Speakers Thumbnails'
+effects:
+  e66a4768-1a8b-4730-ab14-23f9c4742ac5:
+    uuid: e66a4768-1a8b-4730-ab14-23f9c4742ac5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 250
+      height: 300
+      anchor: center-center
