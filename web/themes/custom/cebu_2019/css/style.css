@@ -232,3 +232,13 @@ h2.block-title {
   text-decoration: underline;
 }
 #block-cebu-2019-googlemap h2.block-title {}
+
+.footer {
+  margin-top: 0;
+  background: #38B2E4;
+  color: #fff;
+}
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+}

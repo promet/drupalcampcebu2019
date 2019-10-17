@@ -96,7 +96,7 @@
   <div class="page-heading">
     <div class="container">
       <div class="col-md-12">
-        <img src="{{theme.path}}/images/drupal_cebu.png" alt="Drupal Camp Cebu">
+        <img src="/{{theme.path}}/images/drupal_cebu.png" alt="Drupal Camp Cebu">
         <h2 class="year">2019</h2>
       </div>
     </div>
@@ -161,8 +161,10 @@
 
 {% if page.footer %}
   {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
-      {{ page.footer }}
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        {{ page.footer }}
+      </div>
     </footer>
   {% endblock %}
 {% endif %}
