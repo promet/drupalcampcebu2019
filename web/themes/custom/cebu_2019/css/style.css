@@ -173,10 +173,16 @@ h2.block-title {
   background-image: url(../images/camp-2015.jpg);
   height: 900px;
 }
+.twitter-container h2 {
+  margin-bottom: 30px;
+}
+.twitter-container p {
+  font-size: 17px;
+  line-height: 1.75em;
+}
 .button-container {
   margin-top: 70px;
 }
-
 /**
  * speakers_view views.
  */
