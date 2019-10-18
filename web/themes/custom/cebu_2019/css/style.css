@@ -18,6 +18,10 @@ body.navbar-is-fixed-top {
   box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
 }
 
+#navbar-collapse {
+  padding: 15px 0;
+}
+
 .banner img{
   width: 100%;
   height: auto;
@@ -53,7 +57,7 @@ h2.block-title {
 /* Landing page. */
 .banner {
   background: url('../images/drupal_2019_banner.jpg') center center scroll;
-  min-height: 400px;
+  background-size: cover;
 }
 .banner .page-heading {
   padding: 130px 0;
@@ -63,7 +67,7 @@ h2.block-title {
   text-align: center;
 }
 .banner .page-heading img {
-  max-width: 137px;
+  max-width: 275px;
 }
 .banner .page-heading h2 {
   margin: 0;
@@ -87,12 +91,12 @@ h2.block-title {
 
 .path-frontpage .main-container .region-content .intro-container {
   position: relative;
-  height: 500px;
+  height: 635px;
 }
 .path-frontpage .main-container .region-content .intro-container .container {
   z-index: 20;
   position: relative;
-  min-height: 500px
+  min-height: 635px;
 }
 .path-frontpage .main-container .region-content .intro-container .container .bg-content {
   padding-left: 108px;
@@ -104,7 +108,7 @@ h2.block-title {
 }
 .path-frontpage .main-container .region-content .intro-container .container .bg-content.bg-content-2 {
   padding-right: 0;
-  padding-top: 96px;
+  padding-top: 120px;
 }
 .path-frontpage .main-container .region-content .intro-container .intro-background {
   z-index: 1;
@@ -141,7 +145,8 @@ h2.block-title {
 .path-frontpage .main-container .region-content .intro-container .sub-title-container {
   color: #fff;
   font-size: 25px;
-  padding-top: 60px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .path-frontpage .main-container .region-content .intro-container .sub-title-container .sub-title {
 }
@@ -149,8 +154,17 @@ h2.block-title {
   margin-bottom: 20px;
   line-height: 55px
 }
+.path-frontpage .main-container .region-content .intro-container .sub-title-container .sub-title .quote h3{
+  line-height: 1.75em;
+}
 .path-frontpage .main-container .region-content .intro-container .intro-text {
   color: #000;
+}
+.path-frontpage .main-container .region-content .intro-container .intro-text p {
+  font-size: 17px;
+  text-align: justify;
+  color: #5a5a5a;
+  line-height: 1.75em;
 }
 .path-frontpage .main-container .region-content .fixed-bg {
   background: no-repeat fixed center center;
@@ -159,6 +173,7 @@ h2.block-title {
   background-image: url(../images/camp-2015.jpg);
   height: 900px;
 }
+<<<<<<< HEAD
 .twitter-container h2 {
   margin-bottom: 30px;
 }
@@ -166,6 +181,12 @@ h2.block-title {
   font-size: 17px;
   line-height: 1.75em;
 }
+=======
+.button-container {
+  margin-top: 70px;
+}
+
+>>>>>>> 8be176fd3efcf1b8f7c0353feae98b40a3db29aa
 /**
  * speakers_view views.
  */
