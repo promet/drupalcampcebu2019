@@ -57,7 +57,9 @@ h2.block-title {
   font-size: 60px;
   margin: 30px 0 60px;
 }
-
+.main-container.generic-page {
+  padding-top: 130px;
+}
 /**
  * Custom contents.
  */
@@ -214,7 +216,7 @@ h2.block-title {
   text-align: center;
   margin-bottom: 40px;
 }
-.view-id-speakers_view .views-field-field-image-speaker {
+.view-id-speakers_view .views-field-field-image-speaker img {
   box-shadow: 3px 2px 6px 0px #c6b5b5;
 }
 

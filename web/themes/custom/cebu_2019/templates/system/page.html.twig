@@ -94,7 +94,7 @@
 
 {# Main #}
 {% block main %}
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+  <div role="main" class="main-container generic-page {{ container }} js-quickedit-main-content">
     <div class="row">
 
       {# Header #}
@@ -161,8 +161,11 @@
 
 {% if page.footer %}
   {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
-      {{ page.footer }}
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        {{ page.footer }}
+      </div>
     </footer>
   {% endblock %}
 {% endif %}
+
