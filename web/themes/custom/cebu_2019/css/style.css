@@ -92,7 +92,7 @@ h2.block-title {
 .path-frontpage .main-container .region-content .intro-container .container {
   z-index: 20;
   position: relative;
-  min-height: 635px
+  min-height: 635px;
 }
 .path-frontpage .main-container .region-content .intro-container .container .bg-content {
   padding-left: 108px;
