@@ -91,12 +91,12 @@ h2.block-title {
 
 .path-frontpage .main-container .region-content .intro-container {
   position: relative;
-  height: 500px;
+  height: 635px;
 }
 .path-frontpage .main-container .region-content .intro-container .container {
   z-index: 20;
   position: relative;
-  min-height: 500px
+  min-height: 635px;
 }
 .path-frontpage .main-container .region-content .intro-container .container .bg-content {
   padding-left: 108px;
@@ -108,7 +108,7 @@ h2.block-title {
 }
 .path-frontpage .main-container .region-content .intro-container .container .bg-content.bg-content-2 {
   padding-right: 0;
-  padding-top: 96px;
+  padding-top: 120px;
 }
 .path-frontpage .main-container .region-content .intro-container .intro-background {
   z-index: 1;
@@ -145,7 +145,8 @@ h2.block-title {
 .path-frontpage .main-container .region-content .intro-container .sub-title-container {
   color: #fff;
   font-size: 25px;
-  padding-top: 60px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .path-frontpage .main-container .region-content .intro-container .sub-title-container .sub-title {
 }
@@ -153,8 +154,17 @@ h2.block-title {
   margin-bottom: 20px;
   line-height: 55px
 }
+.path-frontpage .main-container .region-content .intro-container .sub-title-container .sub-title .quote h3{
+  line-height: 1.75em;
+}
 .path-frontpage .main-container .region-content .intro-container .intro-text {
   color: #000;
+}
+.path-frontpage .main-container .region-content .intro-container .intro-text p {
+  font-size: 17px;
+  text-align: justify;
+  color: #5a5a5a;
+  line-height: 1.75em;
 }
 .path-frontpage .main-container .region-content .fixed-bg {
   background: no-repeat fixed center center;
@@ -162,6 +172,9 @@ h2.block-title {
 .path-frontpage .main-container .region-content .fixed-bg.bg-cebu-1 {
   background-image: url(../images/camp-2015.jpg);
   height: 900px;
+}
+.button-container {
+  margin-top: 70px;
 }
 
 /**
