@@ -218,8 +218,6 @@ h2.block-title {
   box-shadow: 3px 2px 6px 0px #c6b5b5;
 }
 
-box-shadow: 3px 2px 6px 0px #c6b5b5;
-
 /**
  * Custom blocks.
  */
@@ -285,3 +283,4 @@ box-shadow: 3px 2px 6px 0px #c6b5b5;
   color: #fff;
   text-decoration: underline;
 }
+
