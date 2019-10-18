@@ -57,7 +57,7 @@ h2.block-title {
 /* Landing page. */
 .banner {
   background: url('../images/drupal_2019_banner.jpg') center center scroll;
-  min-height: 400px;
+  background-size: cover;
 }
 .banner .page-heading {
   padding: 130px 0;
@@ -67,7 +67,7 @@ h2.block-title {
   text-align: center;
 }
 .banner .page-heading img {
-  max-width: 137px;
+  max-width: 275px;
 }
 .banner .page-heading h2 {
   margin: 0;
