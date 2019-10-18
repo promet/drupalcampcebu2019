@@ -37,6 +37,13 @@ body.navbar-is-fixed-top {
 .navbar-default .navbar-brand .text-logo-second {
   color: #cd853f;
 }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #337ab7;
+  background: none;
+  text-decoration: underline;
+}
 
 /**
  * General Styling.
@@ -188,6 +195,9 @@ h2.block-title {
  */
 .view-id-speakers_view {
 }
+.view-id-speakers_view .views-col {
+  margin-bottom: 80px;
+}
 .view-id-speakers_view .views-field-title {
   height: auto;
   width: auto;
@@ -204,6 +214,9 @@ h2.block-title {
   text-align: center;
   margin-bottom: 40px;
 }
+.view-id-speakers_view .views-field-field-image-speaker {
+  box-shadow: 3px 2px 6px 0px #c6b5b5;
+}
 
 /**
  * Custom blocks.
@@ -219,12 +232,17 @@ h2.block-title {
 }
 #block-cebu-2019-views-block-speakers-view-block-1 {
   background: #f5f0e3;
-  padding-bottom: 80px;
+}
+#block-cebu-2019-views-block-speakers-view-block-1 .block-title {
+  margin-bottom: 100px;
 }
 #block-cebu-2019-drupalincebu {
 }
 #block-cebu-2019-drupalincebu .intro-container {
   overflow: hidden;
+}
+#block-cebu-2019-drupalincebu .intro-container.bottom-section .sub-title-container {
+  padding-top: 80px;
 }
 #block-cebu-2019-drupalincebu .intro-container .container .bg-content.bg-content-1 {
   color: #fff;
@@ -265,3 +283,4 @@ h2.block-title {
   color: #fff;
   text-decoration: underline;
 }
+
