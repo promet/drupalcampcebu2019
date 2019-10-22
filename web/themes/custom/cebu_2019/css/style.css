@@ -22,6 +22,10 @@ body.navbar-is-fixed-top {
   padding: 15px 0;
 }
 
+.navbar-header {
+  margin-top: 15px;
+}
+
 .banner img{
   width: 100%;
   height: auto;
@@ -55,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 h2.block-title {
   text-align: center;
   font-size: 60px;
-  margin: 30px 0 60px;
+  margin: 30px 0 100px;
 }
 .main-container.generic-page {
   padding-top: 130px;
@@ -108,7 +112,7 @@ h2.block-title {
   min-height: 635px;
 }
 .path-frontpage .main-container .region-content .intro-container .container .bg-content {
-  padding-left: 108px;
+  padding-left: 75px;
   padding-right: 108px;
 }
 .path-frontpage .main-container .region-content .intro-container .container .bg-content.bg-content-1 {
@@ -128,7 +132,7 @@ h2.block-title {
 }
 .path-frontpage .main-container .region-content .intro-container .intro-background .bg {
   float: left;
-  width: 50%;
+  width: 49%;
   height: 100%;
   position: relative;
   padding-left: 54px;
@@ -146,10 +150,10 @@ h2.block-title {
   -webkit-transform: skewX(-9deg);
   transform: skewX(-9deg);
   background: #7ddbdc;
-  width: 108px;
+  width: 100px;
   height: 100%;
   right: 0;
-  margin-right: -54px;
+  margin-right: -50px;
 }
 .path-frontpage .main-container .region-content .intro-container .sub-title-container {
   color: #fff;
@@ -192,6 +196,24 @@ h2.block-title {
 .button-container {
   margin-top: 70px;
 }
+.button-container .btn-be-a-sponsor,
+.button-container .btn-submit-session,
+.button-container .btn-register {
+  border-radius: 0;
+  padding: 12px;
+  background: #ff6f5e;
+  margin-right: 8px;
+}
+.button-container .btn-be-a-sponsor {
+  background: #ff6f5e;
+}
+.button-container .btn-submit-session {
+  background: #1d9ceb;
+}
+.button-container .btn-register {
+  background: #d79922;
+  margin-right: 0;
+}
 /**
  * speakers_view views.
  */
@@ -221,6 +243,23 @@ h2.block-title {
 }
 
 /**
+ * sponsor_views view.
+ */
+#block-cebu-2019-views-block-sponsors-view-block-1-2 {
+  background-color: #fbeec1;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #fff;
+}
+#block-cebu-2019-views-block-sponsors-view-block-1-2 h3 {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+#block-cebu-2019-views-block-sponsors-view-block-1-2 .views-view-grid{
+  margin-bottom: 30px;
+}
+
+/**
  * Custom blocks.
  */
 /* block-cebu-2019-meetingchallengesbreakingbarriers */
@@ -232,45 +271,51 @@ h2.block-title {
 #block-cebu-2019-speakers {
   background: #f5f0e3;
 }
-#block-cebu-2019-views-block-speakers-view-block-1 {
+#block-cebu-2019-views-block-speakers-view-block-1,
+#block-cebu-2019-views-block-speakers-view-block-1-2 {
   background: #f5f0e3;
+  border-bottom: 1px solid #fff;
 }
-#block-cebu-2019-views-block-speakers-view-block-1 .block-title {
+#block-cebu-2019-views-block-speakers-view-block-1 .block-title,
+#block-cebu-2019-views-block-speakers-view-block-1-2 .block-title {
   margin-bottom: 100px;
 }
-#block-cebu-2019-drupalincebu {
-}
-#block-cebu-2019-drupalincebu .intro-container {
-  overflow: hidden;
-}
-#block-cebu-2019-drupalincebu .intro-container.bottom-section .sub-title-container {
-  padding-top: 80px;
-}
-#block-cebu-2019-drupalincebu .intro-container .container .bg-content.bg-content-1 {
+.hostedbycituniverstiy-wrap {
+  background: #ff6f5e;
   color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 100%;
+  position: relative;
+  border-bottom: 1px solid #fff;
 }
-#block-cebu-2019-drupalincebu .intro-container .container .bg-content.bg-content-1 a {
+.hostedbycituniversity-section h3 {
+  line-height: 1.75em;
+}
+.citu-link-wrap {
+  margin-top: 70px;
+}
+.citu-link-wrap a {
   color: inherit;
   text-decoration: underline;
+  font-size: 25px;
 }
-#block-cebu-2019-drupalincebu .intro-container .intro-background .bg.bg-1 {
-  background: #ff6f5e;
+.hostedbycituniversity-gmap {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 20;
+  top: 0;
+  right: 0;
 }
-#block-cebu-2019-drupalincebu .intro-container .intro-background .bg.bg-1:after {
-  display: none;
-}
-#block-cebu-2019-drupalincebu .intro-container .intro-background .bg.bg-2 {
-  padding-left: 0;
-  padding-right: 0;
-}
-#block-cebu-2019-drupaltweets {
+#block-cebu-2019-drupaltweets-2 {
   background: #1D9CEB;
   padding: 130px 0;
 }
-#block-cebu-2019-drupaltweets .container {
+#block-cebu-2019-drupaltweets-2 .container {
   color: #fff;
 }
-#block-cebu-2019-drupaltweets .container a {
+#block-cebu-2019-drupaltweets-2 .container a {
   color: inherit;
   text-decoration: underline;
 }
@@ -286,3 +331,10 @@ h2.block-title {
   text-decoration: underline;
 }
 
+#block-cebu-2019-bottomfooter-2 img {
+  margin-bottom: 25px;
+}
+
+#block-cebu-2019-bottomfooter-2 p {
+  line-height: 1.75em;
+}
