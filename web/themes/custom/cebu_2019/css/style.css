@@ -63,6 +63,7 @@ h2.block-title {
 }
 .main-container.generic-page {
   padding-top: 50px;
+  margin-bottom: 30px;
 }
 /**
  * Custom contents.
@@ -342,28 +343,36 @@ h2.block-title {
 /**
  * Be a sponsor page
  */
-#block-cebu-2019-sponsorpackages p {
+#block-cebu-2019-sponsorpackages p,
+#be-a-speaker-wrap {
   text-align: justify;
   line-height: 1.75em;
   font-size: 17px;
 }
 #contact-message-be-a-sponsor-form {
   margin-top: 50px;
-  margin-bottom: 30px;
 }
 #contact-message-be-a-sponsor-form input,
 #contact-message-be-a-sponsor-form textarea,
 #contact-message-be-a-sponsor-form select,
-#contact-message-be-a-sponsor-form button {
+#contact-message-be-a-sponsor-form button,
+#node-speakers-form input,
+#node-speakers-form textarea,
+#node-speakers-form select,
+#node-speakers-form button {
   border-radius: 0;
 }
 #contact-message-be-a-sponsor-form input,
-#contact-message-be-a-sponsor-form textarea {
+#contact-message-be-a-sponsor-form textarea,
+#node-speakers-form input,
+#node-speakers-form textarea {
   padding: 20px;
 }
-#contact-message-be-a-sponsor-form button {
+#contact-message-be-a-sponsor-form button,
+#node-speakers-form button {
   padding: 12px;
 }
-#contact-message-be-a-sponsor-form input[type="file"] {
+#contact-message-be-a-sponsor-form input[type="file"],
+#node-speakers-form input[type="file"] {
   padding: 6px 12px;
 }
