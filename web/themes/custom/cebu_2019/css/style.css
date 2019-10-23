@@ -259,6 +259,11 @@ h2.block-title {
 #block-cebu-2019-views-block-sponsors-view-block-1-2 .views-view-grid{
   margin-bottom: 30px;
 }
+.speaker-img-wrap img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 /**
  * Custom blocks.
