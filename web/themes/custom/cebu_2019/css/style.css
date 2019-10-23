@@ -360,20 +360,28 @@ h2.block-title {
 #node-speakers-form input,
 #node-speakers-form textarea,
 #node-speakers-form select,
-#node-speakers-form button {
+#node-speakers-form button,
+#webform-submission-registration-form-add-form input,
+#webform-submission-registration-form-add-form textarea,
+#webform-submission-registration-form-add-form select,
+#webform-submission-registration-form-add-form button {
   border-radius: 0;
 }
 #contact-message-be-a-sponsor-form input,
 #contact-message-be-a-sponsor-form textarea,
 #node-speakers-form input,
-#node-speakers-form textarea {
+#node-speakers-form textarea,
+#webform-submission-registration-form-add-form input,
+#webform-submission-registration-form-add-form textarea {
   padding: 20px;
 }
 #contact-message-be-a-sponsor-form button,
-#node-speakers-form button {
+#node-speakers-form button,
+#webform-submission-registration-form-add-form button {
   padding: 12px;
 }
 #contact-message-be-a-sponsor-form input[type="file"],
-#node-speakers-form input[type="file"] {
+#node-speakers-form input[type="file"],
+#webform-submission-registration-form-add-form input[type="file"] {
   padding: 6px 12px;
 }
