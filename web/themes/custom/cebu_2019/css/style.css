@@ -388,6 +388,7 @@ h2.block-title {
 #node-speakers-form .form-type-vertical-tabs {
   display: none;
 }
+#contact-message-be-a-sponsor-form #edit-preview,
 #node-speakers-form #edit-preview {
   display: none;
 }
