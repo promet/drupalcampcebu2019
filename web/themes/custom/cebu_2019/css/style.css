@@ -391,3 +391,6 @@ h2.block-title {
 #node-speakers-form #edit-preview {
   display: none;
 }
+#edit-bank-deposit-instruction {
+  font-size: 17px;
+}
