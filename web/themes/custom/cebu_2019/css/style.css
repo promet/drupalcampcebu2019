@@ -385,3 +385,9 @@ h2.block-title {
 #webform-submission-drupal-camp-registration-add-form input[type="file"] {
   padding: 6px 12px;
 }
+#node-speakers-form .form-type-vertical-tabs {
+  display: none;
+}
+#node-speakers-form #edit-preview {
+  display: none;
+}
