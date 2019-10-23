@@ -1,0 +1,31 @@
+uuid: 35fda3e0-d13e-438b-bbf3-1e4974e3508d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:68ce3d8b-1b7c-4ae5-a946-ae6c8c57866d'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupalcamp_cebu_2018
+id: drupalcamp_cebu_2018_drupalincebu_2
+theme: drupalcamp_cebu_2018
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:68ce3d8b-1b7c-4ae5-a946-ae6c8c57866d'
+settings:
+  id: 'block_content:68ce3d8b-1b7c-4ae5-a946-ae6c8c57866d'
+  label: 'Drupal in Cebu'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

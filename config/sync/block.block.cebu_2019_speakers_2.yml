@@ -1,0 +1,31 @@
+uuid: 4a515598-b523-4cc8-af49-c303d9b9fc14
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:4268c52d-dbb2-430b-9f25-5f896c889b1a'
+  module:
+    - block_content
+    - system
+  theme:
+    - cebu_2019
+id: cebu_2019_speakers_2
+theme: cebu_2019
+region: content
+weight: 1
+provider: null
+plugin: 'block_content:4268c52d-dbb2-430b-9f25-5f896c889b1a'
+settings:
+  id: 'block_content:4268c52d-dbb2-430b-9f25-5f896c889b1a'
+  label: Speakers
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

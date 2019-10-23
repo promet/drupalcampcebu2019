@@ -1,0 +1,31 @@
+uuid: 5bd57085-effd-4b08-a020-8c9d3c87d291
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:0416f607-55ec-4589-8615-6b04e7e38e18'
+  module:
+    - block_content
+    - system
+  theme:
+    - cebu_2019
+id: cebu_2019_sponsors_2
+theme: cebu_2019
+region: content
+weight: 2
+provider: null
+plugin: 'block_content:0416f607-55ec-4589-8615-6b04e7e38e18'
+settings:
+  id: 'block_content:0416f607-55ec-4589-8615-6b04e7e38e18'
+  label: Sponsors
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

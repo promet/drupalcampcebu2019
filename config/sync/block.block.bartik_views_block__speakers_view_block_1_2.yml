@@ -1,0 +1,30 @@
+uuid: 6cb541d0-fc4a-4f2e-a4c1-0d875ba2dbcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.speakers_view
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: bartik_views_block__speakers_view_block_1_2
+theme: bartik
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:speakers_view-block_1'
+settings:
+  id: 'views_block:speakers_view-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

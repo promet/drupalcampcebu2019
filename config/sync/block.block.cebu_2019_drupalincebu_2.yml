@@ -1,0 +1,31 @@
+uuid: 76c1b124-bb00-42d4-9987-e71b3c6d9d45
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:68ce3d8b-1b7c-4ae5-a946-ae6c8c57866d'
+  module:
+    - block_content
+    - system
+  theme:
+    - cebu_2019
+id: cebu_2019_drupalincebu_2
+theme: cebu_2019
+region: content
+weight: 3
+provider: null
+plugin: 'block_content:68ce3d8b-1b7c-4ae5-a946-ae6c8c57866d'
+settings:
+  id: 'block_content:68ce3d8b-1b7c-4ae5-a946-ae6c8c57866d'
+  label: 'Drupal in Cebu'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

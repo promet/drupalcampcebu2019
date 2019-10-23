@@ -1,18 +1,19 @@
-uuid: 258ce1e4-349b-4962-b2ba-8b9fcd9ba9c0
+uuid: aab4ae7d-6d8c-475f-b2e0-2b9f8a77744c
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.account
   module:
     - system
+    - user
   theme:
     - cebu_2019
 _core:
   default_config_hash: 8a31Ywc1t2zlddGd3bmDrFMefWqgSK2E02ceFdr-bfc
 id: cebu_2019_account_menu
 theme: cebu_2019
-region: header
+region: navigation_collapsible
 weight: -6
 provider: null
 plugin: 'system_menu_block:account'
@@ -24,4 +25,12 @@ settings:
   level: 1
   depth: 1
   expand_all_items: false
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

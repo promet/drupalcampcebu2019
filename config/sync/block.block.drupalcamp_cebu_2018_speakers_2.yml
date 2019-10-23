@@ -1,0 +1,31 @@
+uuid: 4008043f-9305-4163-8478-29d68a8b6805
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4268c52d-dbb2-430b-9f25-5f896c889b1a'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupalcamp_cebu_2018
+id: drupalcamp_cebu_2018_speakers_2
+theme: drupalcamp_cebu_2018
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:4268c52d-dbb2-430b-9f25-5f896c889b1a'
+settings:
+  id: 'block_content:4268c52d-dbb2-430b-9f25-5f896c889b1a'
+  label: Speakers
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

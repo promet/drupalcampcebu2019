@@ -1,0 +1,178 @@
+uuid: d95ecb79-46dd-4189-a1ac-f04a5760fba7
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: drupal_camp_registration
+title: 'Drupal Camp Registration'
+description: ''
+category: ''
+elements: "personal_information:\n  '#type': webform_wizard_page\n  '#title': 'Personal Information'\n  name:\n    '#type': webform_name\n    '#title': Name\n    '#title__access': false\n    '#first__placeholder': 'First name here.'\n    '#first__required': true\n    '#middle__placeholder': 'Middle name here.'\n    '#last__placeholder': 'Last name here.'\n    '#last__required': true\n    '#suffix__access': false\n    '#degree__access': false\n  email:\n    '#type': email\n    '#title': Email\n    '#placeholder': 'Email here.'\n    '#required': true\n    '#unique': true\n  location:\n    '#type': webform_address\n    '#title': Location\n    '#default_value':\n      address: ''\n      address_2: ''\n      city: Cebu\n      country: Philippines\n      state_province: ''\n      postal_code: ''\n    '#address__placeholder': 'Address here.'\n    '#address__required': true\n    '#address_2__placeholder': 'Address here.'\n    '#city__placeholder': 'City/Town here.'\n    '#city__required': true\n    '#state_province__access': false\n    '#postal_code__access': false\n    '#country__placeholder': 'Country here.'\n    '#country__required': true\n  receipt_reference_number:\n    '#type': textfield\n    '#title': 'Receipt Reference Number'\n    '#placeholder': 'Receipt Reference Number here.'\n    '#access_create_roles':\n      - administrator\n    '#access_update_roles':\n      - administrator\n    '#access_view_roles':\n      - administrator\n  payment_status:\n    '#type': select\n    '#title': 'Payment Status'\n    '#options':\n      pending: Pending\n      paid: Paid\n      cancelled: Cancelled\n    '#access_create_roles':\n      - administrator\n    '#access_update_roles':\n      - administrator\n    '#access_view_roles':\n      - administrator\ncheckout:\n  '#type': webform_wizard_page\n  '#title': Checkout\n  bank_deposit_instruction:\n    '#type': webform_markup\n    '#markup': |\n      <h2 dir=\"ltr\">Payment Instructions:</h2>\n      \n      <p dir=\"ltr\">1. Please make payment to:</p>\n      \n      <ul dir=\"ltr\">\n      \t<li>Bank: &nbsp; <strong>METROBANK</strong></li>\n      \t<li>Account Name: <strong>Prometsource Corporation</strong></li>\n      \t<li>Account Number: <strong>902-7-90200333-5</strong></li>\n      </ul>\n      \n      <p dir=\"ltr\">2. Only one transaction per participant.<br />\n      3. Rates</p>\n      \n      <ul dir=\"ltr\">\n      \t<li>\n      \t<h4>Early Bird Rate</h4>\n      \n      \t<ul>\n      \t\t<li>Students &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Nov. 11-18 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;P300.00</li>\n      \t\t<li>Professionals &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Nov. 11-18 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;P500.00</li>\n      \t</ul>\n      \t</li>\n      \t<li>\n      \t<h4>Regular Rate</h4>\n      \n      \t<ul>\n      \t\t<li>Students&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Nov. 21-Dec. 7&nbsp;&nbsp; &nbsp;P500.00</li>\n      \t\t<li>Professionals&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Nov. 21-Dec. 7 &nbsp; &nbsp;&nbsp; &nbsp;P700.00</li>\n      \t</ul>\n      \t</li>\n      </ul>\n      \n      <p dir=\"ltr\">4. Please keep your transaction receipts for reference and bring it with you during the event.<br />\n      5. You may also opt to pay through our office:</p>\n      \n      <ul dir=\"ltr\">\n      \t<li>From 8:00 am &ndash; 3:00 pm every Mondays, Thursdays, and Fridays only.</li>\n      \t<li>We are located at the 14th Floor, Cebu IT Tower 1, Cebu Business Park. &nbsp;<br />\n      \t&nbsp;</li>\n      </ul>\n      \n  ticket_type:\n    '#type': webform_buttons\n    '#title': 'Ticket Type'\n    '#description': |\n      <h4>&nbsp;Early Bird Promo:</h4>\n      \n      <ul>\n      \t<li>PHP 300.00 - Students</li>\n      \t<li>PHP 500.00 - Professional</li>\n      </ul>\n      &nbsp;\n      \n    '#options':\n      student: 'Student (PHP 300)'\n      professional: 'Professional (PHP 500)'\n    '#required': true\n  school_name:\n    '#type': textfield\n    '#title': 'School Name'\n    '#placeholder': 'School Name here.'\n    '#states':\n      visible:\n        ':input[name=\"ticket_type\"]':\n          value: student\n      invisible:\n        ':input[name=\"ticket_type\"]':\n          '!value': student\n  company_name:\n    '#type': textfield\n    '#title': 'Company Name'\n    '#placeholder': 'Company Name here.'\n    '#states':\n      visible:\n        ':input[name=\"ticket_type\"]':\n          value: professional\n      invisible:\n        ':input[name=\"ticket_type\"]':\n          '!value': professional"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: ''
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: form/registration
+  page_confirm_path: form/registration/confirmation
+  page_admin_theme: false
+  form_title: both
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_remote_addr: true
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace:
+    webform_routes: {  }
+    node_routes: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: modal
+  confirmation_title: 'Registered successfully!'
+  confirmation_message: "<h4>You have been registered successfully.</h4>\r\n\r\n<h4>Please proceed with the payment instructions:</h4>\r\n\r\n<h2 dir=\"ltr\">Payment Instructions:</h2>\r\n\r\n<p dir=\"ltr\">1. Please make payment to:</p>\r\n\r\n<ul dir=\"ltr\">\r\n\t<li>Bank: &nbsp; <strong>METROBANK</strong></li>\r\n\t<li>Account Name: <strong>Prometsource Corporation</strong></li>\r\n\t<li>Account Number: <strong>902-7-90200333-5</strong></li>\r\n</ul>\r\n\r\n<p dir=\"ltr\">2. Only one transaction per participant.<br />\r\n3. Rates</p>\r\n\r\n<ul dir=\"ltr\">\r\n\t<li>\r\n\t<h4>Early Bird Rate</h4>\r\n\r\n\t<ul>\r\n\t\t<li>Students &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Nov. 11-18 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;P300.00</li>\r\n\t\t<li>Professionals &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Nov. 11-18 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;P500.00</li>\r\n\t</ul>\r\n\t</li>\r\n\t<li>\r\n\t<h4>Regular Rate</h4>\r\n\r\n\t<ul>\r\n\t\t<li>Students&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Nov. 21-Dec. 7&nbsp;&nbsp; &nbsp;P500.00</li>\r\n\t\t<li>Professionals&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Nov. 21-Dec. 7 &nbsp; &nbsp;&nbsp; &nbsp;P700.00</li>\r\n\t</ul>\r\n\t</li>\r\n</ul>\r\n\r\n<p dir=\"ltr\">4. Please keep your transaction receipts for reference and bring it with you during the event.<br />\r\n5. You may also opt to pay through our office:</p>\r\n\r\n<ul dir=\"ltr\">\r\n\t<li>From 8:00 am &ndash; 3:00 pm every Mondays, Thursdays, and Fridays only.</li>\r\n\t<li>We are located at the 14th Floor, Cebu IT Tower 1, Cebu Business Park. &nbsp;<br />\r\n\t&nbsp;</li>\r\n</ul>"
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }

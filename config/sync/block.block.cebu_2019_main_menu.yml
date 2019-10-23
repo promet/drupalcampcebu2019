@@ -1,4 +1,4 @@
-uuid: 4084340b-eb8c-4af4-afac-87f99486b183
+uuid: 5eddbce5-0267-4508-a4ce-f725438b5995
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: cebu_2019_main_menu
 theme: cebu_2019
 region: navigation_collapsible
-weight: -10
+weight: -7
 provider: null
 plugin: 'system_menu_block:main'
 settings:

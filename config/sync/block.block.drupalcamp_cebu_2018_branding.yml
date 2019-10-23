@@ -1,4 +1,4 @@
-uuid: 34779717-290b-4cf5-9036-3808a0635e98
+uuid: f89f90d4-89c5-4b54-8694-aa44b7b38201
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: drupalcamp_cebu_2018_branding
 theme: drupalcamp_cebu_2018
 region: header
-weight: 0
+weight: -7
 provider: null
 plugin: system_branding_block
 settings:

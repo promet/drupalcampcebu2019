@@ -1,4 +1,4 @@
-uuid: 938be262-3630-4dd5-a0c6-c11024141f02
+uuid: 6a044ed4-dbd0-437e-b080-39a6e1c8ecc3
 langcode: en
 status: false
 dependencies:
@@ -10,8 +10,8 @@ _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: cebu_2019_breadcrumbs
 theme: cebu_2019
-region: header
-weight: -10
+region: content
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:

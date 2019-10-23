@@ -4,10 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.sponsor.field_image_for_sponsor
+    - field.field.node.sponsor.field_sponsorship_level
+    - field.field.node.sponsor.field_website
     - image.style.thumbnail
     - node.type.sponsor
   module:
     - image
+    - link
     - path
 id: node.sponsor.default
 targetEntityType: node
@@ -27,6 +30,20 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_sponsorship_level:
+    weight: 123
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_website:
+    weight: 124
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   path:
     type: path

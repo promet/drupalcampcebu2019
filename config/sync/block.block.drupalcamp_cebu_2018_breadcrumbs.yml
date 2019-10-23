@@ -1,6 +1,6 @@
-uuid: e093c7f3-71d7-4d8b-974d-78505a2de4a8
+uuid: 5aae7130-55a5-49e9-9af0-d531846cce5c
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: drupalcamp_cebu_2018_breadcrumbs
 theme: drupalcamp_cebu_2018
-region: header
-weight: 0
+region: content
+weight: 2
 provider: null
 plugin: system_breadcrumb_block
 settings:

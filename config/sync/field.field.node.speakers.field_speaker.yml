@@ -9,9 +9,9 @@ id: node.speakers.field_speaker
 field_name: field_speaker
 entity_type: node
 bundle: speakers
-label: Speaker
+label: 'Full Name'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

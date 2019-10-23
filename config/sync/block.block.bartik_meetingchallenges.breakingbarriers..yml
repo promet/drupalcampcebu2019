@@ -1,0 +1,31 @@
+uuid: a385137d-7610-491c-a3ce-449d2e60cbba
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d71e41bb-baff-49b0-bd58-5b022c39809d'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: bartik_meetingchallenges.breakingbarriers.
+theme: bartik
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:d71e41bb-baff-49b0-bd58-5b022c39809d'
+settings:
+  id: 'block_content:d71e41bb-baff-49b0-bd58-5b022c39809d'
+  label: 'Meeting Challenges. Breaking Barriers.'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

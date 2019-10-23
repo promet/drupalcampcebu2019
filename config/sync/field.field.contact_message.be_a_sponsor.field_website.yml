@@ -1,0 +1,23 @@
+uuid: 9489615f-ddc4-49cc-bda9-ed92e910fb7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.be_a_sponsor
+    - field.storage.contact_message.field_website
+  module:
+    - link
+id: contact_message.be_a_sponsor.field_website
+field_name: field_website
+entity_type: contact_message
+bundle: be_a_sponsor
+label: Website
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

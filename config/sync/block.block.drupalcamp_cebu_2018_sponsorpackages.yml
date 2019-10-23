@@ -1,0 +1,31 @@
+uuid: 150b33ba-a8b7-4236-9507-ee4c6ba0b294
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d09a5c3c-75fd-4f61-a8f9-e278473d0c18'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupalcamp_cebu_2018
+id: drupalcamp_cebu_2018_sponsorpackages
+theme: drupalcamp_cebu_2018
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:d09a5c3c-75fd-4f61-a8f9-e278473d0c18'
+settings:
+  id: 'block_content:d09a5c3c-75fd-4f61-a8f9-e278473d0c18'
+  label: 'Sponsor packages'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact/be_a_sponsor
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,30 @@
+uuid: 740aa271-abdf-427b-97bd-4fc8c9d3cd55
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.speakers_view
+  module:
+    - system
+    - views
+  theme:
+    - drupalcamp_cebu_2018
+id: drupalcamp_cebu_2018_views_block__speakers_view_block_1_2
+theme: drupalcamp_cebu_2018
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:speakers_view-block_1'
+settings:
+  id: 'views_block:speakers_view-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

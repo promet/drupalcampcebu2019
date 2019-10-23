@@ -1,0 +1,30 @@
+uuid: 46a2851a-5c84-4f13-950a-19b99983c33a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sponsors_view
+  module:
+    - system
+    - views
+  theme:
+    - cebu_2019
+id: cebu_2019_views_block__sponsors_view_block_1_2
+theme: cebu_2019
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:sponsors_view-block_1'
+settings:
+  id: 'views_block:sponsors_view-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

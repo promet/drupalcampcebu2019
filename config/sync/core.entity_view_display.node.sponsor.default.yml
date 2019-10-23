@@ -4,9 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.sponsor.field_image_for_sponsor
+    - field.field.node.sponsor.field_sponsorship_level
+    - field.field.node.sponsor.field_website
     - node.type.sponsor
   module:
     - image
+    - link
+    - options
     - user
 id: node.sponsor.default
 targetEntityType: node
@@ -21,6 +25,25 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_sponsorship_level:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_website:
+    weight: 104
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   links:
     weight: 100

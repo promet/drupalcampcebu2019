@@ -1,0 +1,31 @@
+uuid: a6d11cae-4c42-4d3b-bc72-2a962f1fa6a3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d71e41bb-baff-49b0-bd58-5b022c39809d'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupalcamp_cebu_2018
+id: drupalcamp_cebu_2018_meetingchallenges.breakingbarriers.
+theme: drupalcamp_cebu_2018
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:d71e41bb-baff-49b0-bd58-5b022c39809d'
+settings:
+  id: 'block_content:d71e41bb-baff-49b0-bd58-5b022c39809d'
+  label: 'Meeting Challenges. Breaking Barriers.'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

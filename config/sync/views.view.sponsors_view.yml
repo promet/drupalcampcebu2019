@@ -4,10 +4,14 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_image_for_sponsor
+    - field.storage.node.field_sponsorship_level
+    - field.storage.node.field_website
     - node.type.sponsor
   module:
     - image
+    - link
     - node
+    - options
     - user
 id: sponsors_view
 label: 'Sponsors view'
@@ -71,19 +75,32 @@ display:
             last: 'Last »'
           quantity: 9
       style:
-        type: default
+        type: grid
+        options:
+          grouping:
+            -
+              field: field_sponsorship_level
+              rendered: true
+              rendered_strip: false
+          columns: 4
+          automatic_width: true
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: 'col-xs-4 col-sm-3'
+          row_class_default: true
+          row_class_custom: sponsor-row
       row:
         type: fields
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        field_sponsorship_level:
+          id: field_sponsorship_level
+          table: node__field_sponsorship_level
+          field: field_sponsorship_level
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -102,8 +119,8 @@ display:
             target: ''
             nl2br: false
             max_length: 0
-            word_boundary: false
-            ellipsis: false
+            word_boundary: true
+            ellipsis: true
             more_link: false
             more_link_text: ''
             more_link_path: ''
@@ -124,9 +141,8 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
+          type: list_default
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -137,8 +153,73 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: title
+          plugin_id: field
+        field_website:
+          id: field_website
+          table: node__field_website
+          field: field_website
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: 80
+            url_only: false
+            url_plain: false
+            rel: '0'
+            target: '0'
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
           plugin_id: field
         field_image_for_sponsor:
           id: field_image_for_sponsor
@@ -152,8 +233,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '{{ field_website }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -241,13 +322,14 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Sponsors view'
+      title: Sponsors
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      css_class: container
     cache_metadata:
       max-age: -1
       contexts:
@@ -258,6 +340,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_image_for_sponsor'
+        - 'config:field.storage.node.field_sponsorship_level'
+        - 'config:field.storage.node.field_website'
   block_1:
     display_plugin: block
     id: block_1
@@ -276,6 +360,8 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_image_for_sponsor'
+        - 'config:field.storage.node.field_sponsorship_level'
+        - 'config:field.storage.node.field_website'
   page_1:
     display_plugin: page
     id: page_1
@@ -294,3 +380,5 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_image_for_sponsor'
+        - 'config:field.storage.node.field_sponsorship_level'
+        - 'config:field.storage.node.field_website'

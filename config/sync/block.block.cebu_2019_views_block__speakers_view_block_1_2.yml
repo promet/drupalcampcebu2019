@@ -1,0 +1,30 @@
+uuid: ddacee3d-ed70-4378-967b-89d295cc9e76
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.speakers_view
+  module:
+    - system
+    - views
+  theme:
+    - cebu_2019
+id: cebu_2019_views_block__speakers_view_block_1_2
+theme: cebu_2019
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:speakers_view-block_1'
+settings:
+  id: 'views_block:speakers_view-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

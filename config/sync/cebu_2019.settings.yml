@@ -3,20 +3,14 @@ schemas:
   cebu_2019: 8000
 favicon:
   mimetype: image/svg+xml
-  path: 'public://logo.svg'
-  url: 'http://localhost/themes/custom/cebu_2019/favicon.ico'
+  path: ''
+  url: 'http://0.0.0.0:5120/sites/default/files/logo.svg'
   use_default: false
-features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  node_user_picture: true
 logo:
   path: 'public://logo_2.png'
   url: ''
   use_default: false
 table_responsive: '-1'
-navbar_position: fixed-top
 cdn_theme: bootstrap
 cdn_cache_ttl_versions: '604800'
 cdn_cache_ttl_themes: '604800'
@@ -24,3 +18,10 @@ cdn_cache_ttl_assets: '0'
 cdn_cache_ttl_library: '0'
 reset_http_request_cache: ''
 table: ''
+fluid_container: 0
+navbar_position: fixed-top
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true

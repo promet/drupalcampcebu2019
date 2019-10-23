@@ -1,0 +1,31 @@
+uuid: e12290fe-d474-4611-9855-9a21c88a1cf5
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:c068e9e4-840a-42e0-85a8-cee5edfffdfe'
+  module:
+    - block_content
+    - system
+  theme:
+    - cebu_2019
+id: cebu_2019_googlemap_2
+theme: cebu_2019
+region: content
+weight: 4
+provider: null
+plugin: 'block_content:c068e9e4-840a-42e0-85a8-cee5edfffdfe'
+settings:
+  id: 'block_content:c068e9e4-840a-42e0-85a8-cee5edfffdfe'
+  label: 'Google Map'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

@@ -1,4 +1,4 @@
-uuid: 08daab27-8eae-42a4-a0a7-9edce90efac3
+uuid: 9e8861e1-610d-4141-9b87-b880b780fb88
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: bartik_content
 theme: bartik
 region: content
-weight: 0
+weight: -5
 provider: null
 plugin: system_main_block
 settings:
