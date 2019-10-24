@@ -499,8 +499,8 @@ h2.block-title {
     position: relative;
     bottom: -200px;
     z-index: -1;
-    height: 1000px;
-    background-attachment: initial;
+    height: 1500px;
+    background-attachment: bottom;
   }
   /* Speaker */
   .views-view-grid .views-row {
