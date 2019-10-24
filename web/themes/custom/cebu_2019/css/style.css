@@ -400,6 +400,9 @@ h2.block-title {
 #edit-bank-deposit-instruction {
   font-size: 17px;
 }
+#node-speakers-form #edit-field-status--wrapper {
+  display: none;
+}
 
 /**
  * Registration form.
