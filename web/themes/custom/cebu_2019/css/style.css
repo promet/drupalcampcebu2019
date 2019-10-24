@@ -415,4 +415,6 @@ h2.block-title {
 .individual-registration-container .individual-location-container {
   margin-bottom: 15px;
 }
-
+.group-registration-container .js-form-wrapper.js-webform-states-hidden {
+  display: block !important;
+}
