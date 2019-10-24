@@ -522,4 +522,7 @@ h2.block-title {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .group-registration-container .webform-multiple-table-responsive td.webform-multiple-table--operations {
+    display: block;
+  }
 }
