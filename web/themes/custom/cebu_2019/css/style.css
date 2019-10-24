@@ -241,6 +241,7 @@ h2.block-title {
 }
 .view-id-speakers_view .views-field-field-image-speaker img {
   box-shadow: 3px 2px 6px 0px #c6b5b5;
+  width: 300px;
 }
 
 /**
@@ -420,4 +421,97 @@ h2.block-title {
 }
 .group-registration-container .js-form-wrapper.js-webform-states-hidden {
   display: block !important;
+}
+
+/**
+ * Mobile view styles.
+ */
+@media screen and (max-width: 576px) {
+  /* Navbar */
+  #navbar-collapse {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* Banner */
+  .banner .page-heading {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .banner .page-heading img {
+    max-width: 200px;
+  }
+  .banner .page-heading h2.year {
+    font-size: 125px;
+  }
+  /* Tagline */
+  .path-frontpage .main-container .region-content .intro-container .container .bg-content.bg-content-1 {
+    padding-top: 60px;
+    padding-right: 0;
+    padding-bottom: 30px;
+    background: #7ddbdc;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .path-frontpage .main-container .region-content .intro-container .sub-title-container .sub-title .quote {
+    text-align: center;
+  }
+  .path-frontpage .main-container .region-content .intro-container .container .bg-content.bg-content-2 {
+    padding-top: 60px;
+    padding-left: 0;
+  }
+  .path-frontpage .main-container .region-content .intro-container .intro-background .bg.bg-1 {
+    background: transparent;
+    width: 0;
+    height: 0;
+    padding: 0;
+    float: none;
+  }
+  .path-frontpage .main-container .region-content .intro-container .intro-background .bg.bg-1:after {
+    background: transparent;
+    width: 0;
+    height: 0;
+    position: static;
+    margin: 0;
+  }
+  .path-frontpage .main-container .region-content .intro-container .intro-background .bg {
+    float: none;
+    width: 0;
+    height: 0;
+    position: static;
+    padding: 0;
+  }
+  .button-container {
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+  .button-container > .pull-left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  .button-container .btn-be-a-sponsor,
+  .button-container .btn-submit-session,
+  .button-container .btn-register {
+    width: 100%;
+  }
+  /* Speaker */
+  .views-view-grid .views-row {
+    width: auto;
+  }
+  /* Venue */
+  .hostedbycituniverstiy-wrap {
+    padding-bottom: 0;
+    padding-top: 50px;
+  }
+  .hostedbycituniversity-gmap {
+    position: relative;
+    height: 450px;
+    margin-top: 60px;
+    width: 100%;
+  }
+  /* DrupalTweet */
+  #block-cebu-2019-drupaltweets-2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
