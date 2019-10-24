@@ -494,6 +494,14 @@ h2.block-title {
   .button-container .btn-register {
     width: 100%;
   }
+  .path-frontpage .main-container .region-content .fixed-bg.bg-cebu-1 {
+    background-position: 55%;
+    position: relative;
+    bottom: -200px;
+    z-index: -1;
+    height: 1000px;
+    background-attachment: initial;
+  }
   /* Speaker */
   .views-view-grid .views-row {
     width: auto;
