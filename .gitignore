@@ -30,3 +30,6 @@
 
 # Ignore theme .map files.
 /web/themes/custom/drupalcamp_cebu_2018/*/style.css.map
+
+# Hidden folders
+/.composer-tmp/
